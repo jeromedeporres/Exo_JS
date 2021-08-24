@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exo12 Variables</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var age = (prompt("Entrez votre age"));
+
+            if ((age >= 0) && (age <= 17)) {
+                alert ("Vous etes pas encore majeur");
+            } 
+            else if ((age >= 18) && (age <= 49)) {
+                alert ("Vous etes majeur, mai pas encore senior");
+            } 
+            else if ((age >= 49) && (age <= 59)) {
+                alert ("Vous etes senior mais ps encore retraité");
+            } 
+            else  if ((age >= 59) && (age < 121)) {
+                alert ("Vous etes retraité, profitez de votre temps libre");
+            }
+            else if (isNaN(age)) { //Message d'avertissement quand l'input est une chaine de caractère
+                alert ("Veuillez entrer un nombre")
+            }
+            else { alert ("Entrez un age entre 0 et 120 ans");
+        }
+        </script>
+    </body>
+</html>

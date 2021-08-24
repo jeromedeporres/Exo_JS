@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Exo5 Variables</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var articlePriceHT = parseInt(prompt("Entrez un prix"));
+            var articleNb = parseInt(prompt("Entrez le nombre d'article"));
+            var TVA = parseInt(prompt("Entrez le TVA"));
+
+            var prixTTC = (articleNb*articlePriceHT*(1+(TVA/100))); //Pour calculer le prix avec TVA
+            alert('Le Prix TTC ' + ' est'+ ' ' +prixTTC);
+        </script>
+    </body>
+</html>
